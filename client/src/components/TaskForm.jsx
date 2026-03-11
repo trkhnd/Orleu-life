@@ -7,11 +7,12 @@ export default function TaskForm({ onAdd }) {
 
   const handleSubmit = (e) => {
     e.preventDefault()
+
     if (!title.trim()) return
 
     onAdd({
-      title,
-      time,
+      title: title.trim(),
+      time: time.trim() || 'Any time',
       category,
       done: false
     })
@@ -32,17 +33,17 @@ export default function TaskForm({ onAdd }) {
 
       <input
         type="text"
-        placeholder="Time"
+        placeholder="Time (e.g. 07:00)"
         value={time}
         onChange={(e) => setTime(e.target.value)}
       />
 
       <select value={category} onChange={(e) => setCategory(e.target.value)}>
-        <option>Study</option>
-        <option>Health</option>
-        <option>Work</option>
-        <option>Planning</option>
-        <option>Personal</option>
+        <option value="Study">Study</option>
+        <option value="Health">Health</option>
+        <option value="Work">Work</option>
+        <option value="Planning">Planning</option>
+        <option value="Personal">Personal</option>
       </select>
 
       <button type="submit">Add Task</button>

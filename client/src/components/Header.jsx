@@ -4,16 +4,16 @@ export default function Header() {
   return (
     <header className="hero">
       <motion.div
-        initial={{ opacity: 0, y: 20 }}
+        initial={{ opacity: 0, y: 24 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6 }}
+        transition={{ duration: 0.7 }}
         className="hero-content"
       >
         <p className="badge">Orleu Life</p>
-        <h1>Track your routine, agenda, and daily progress beautifully.</h1>
+        <h1>Build a better day, one routine at a time.</h1>
         <p className="hero-text">
-          A smart and interactive productivity space to help users stay consistent,
-          organized, and motivated every day.
+          Organize your agenda, track your habits, monitor your daily progress,
+          and stay focused with a clean and interactive productivity dashboard.
         </p>
       </motion.div>
     </header>
