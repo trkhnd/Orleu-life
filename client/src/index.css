@@ -1,4 +1,129 @@
 * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Inter, Arial, sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #0f172a, #1e1b4b, #111827);
+  color: white;
+  min-height: 100vh;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.app-shell {
+  min-height: 100vh;
+}
+
+.container {
+  width: min(1150px, 92%);
+  margin: 0 auto;
+  padding: 30px 0 60px;
+}
+
+.hero {
+  width: min(1150px, 92%);
+  margin: 30px auto 0;
+}
+
+.hero-content {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 28px;
+  padding: 32px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25);
+}
+
+.badge {
+  display: inline-block;
+  padding: 8px 14px;
+  border-radius: 999px;
+  background: rgba(139, 92, 246, 0.22);
+  color: #ddd6fe;
+  margin-bottom: 16px;
+  font-weight: 700;
+}
+
+.hero h1 {
+  font-size: clamp(2rem, 4vw, 3.6rem);
+  line-height: 1.1;
+  margin-bottom: 14px;
+}
+
+.hero-text {
+  color: rgba(255, 255, 255, 0.75);
+  max-width: 700px;
+  font-size: 1.05rem;
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 24px;
+  padding: 24px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+  margin: 28px 0;
+}
+
+.stat-card h3,
+.chart-card h3,
+.glass-card h2 {
+  margin-bottom: 12px;
+}
+
+.big-number {
+  font-size: 2.2rem;
+  font-weight: 800;
+}
+
+.chart-card {
+  grid-column: span 1;
+}
+
+.grid-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+  margin-bottom: 18px;
+}
+
+.task-form {
+  display: grid;
+  gap: 12px;
+}
+
+.task-form input,
+.task-form select,
+.task-form button,
+.note-box,
+.task-actions button {
+  border: none;
+  border-radius: 16px;
+  padding: 14px;
+  font-size: 1rem;
+}
+
+.task-form input,
+.task-form select,
+.note-box {
+  background: rgba(255, 255, 255, 0.12);
+  color: white;
+}
+
+.task-form input::placeholder,
+.note-box::placeholder {
   color: rgba(255, 255, 255, 0.55);
 }
 
