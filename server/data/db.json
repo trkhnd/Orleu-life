@@ -8,17 +8,17 @@
       "done": false
     },
     {
-      "id": "2",
-      "title": "Study for 2 hours",
-      "time": "10:00",
-      "category": "Study",
-      "done": true
-    },
-    {
       "id": "3",
       "title": "Plan tomorrow",
       "time": "21:00",
       "category": "Planning",
+      "done": false
+    },
+    {
+      "id": "1773246559971",
+      "title": "Codeforces",
+      "time": "19:00",
+      "category": "Study",
       "done": false
     }
   ]
