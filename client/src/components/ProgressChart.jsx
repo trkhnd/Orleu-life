@@ -15,10 +15,17 @@ export default function ProgressChart({ progress }) {
     <div style={{ width: '100%', height: 250 }}>
       <ResponsiveContainer>
         <AreaChart data={data}>
-          <XAxis dataKey="day" />
-          <YAxis domain={[0, 100]} />
+          <XAxis dataKey="day" axisLine={false} tickLine={false} />
+          <YAxis domain={[0, 100]} axisLine={false} tickLine={false} />
           <Tooltip />
-          <Area type="monotone" dataKey="value" stroke="#8b5cf6" fill="#8b5cf6" fillOpacity={0.25} />
+          <Area
+            type="monotone"
+            dataKey="value"
+            stroke="#111827"
+            fill="#dbeafe"
+            fillOpacity={1}
+            strokeWidth={2}
+          />
         </AreaChart>
       </ResponsiveContainer>
     </div>
